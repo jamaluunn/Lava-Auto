@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Pull latest changes
         run: |
@@ -52,7 +52,7 @@ jobs:
     needs: ethereum_auto_commit
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Pull latest changes
         run: |
@@ -82,7 +82,7 @@ jobs:
     needs: near_auto_commit
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Pull latest changes
         run: |
@@ -112,7 +112,7 @@ jobs:
     needs: starknet_auto_commit
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Pull latest changes
         run: |
